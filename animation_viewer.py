@@ -1,5 +1,5 @@
 from pico2d import *
-
+#애니메이션별 프레임 수가 서로 다른 경우 지원 구현
 open_canvas()
 grass = load_image('grass.png')
 attackcharacter = load_image('images/Woodcutter_attack1.png')
