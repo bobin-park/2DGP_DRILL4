@@ -10,13 +10,14 @@ deathcharacter = load_image('images/Woodcutter_death.png')
 motionNum=1 #모션 애니 번호
 imageFrame=6 #모션 애니 프레임수
 frame=0
-if motionNum==1 or motionNum==4:
-    imageFrame=7
-elif motionNum==2:
-    imageFrame=4
-elif motionNum==3:
-    imageFrame=3
+
 while 1:
+    if motionNum == 1 or motionNum == 4:
+        imageFrame = 7
+    elif motionNum == 2:
+        imageFrame = 4
+    elif motionNum == 3:
+        imageFrame = 3
     for x in range(0, imageFrame * 5, 1):
         clear_canvas()
         grass.draw(400, 30)
